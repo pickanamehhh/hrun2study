@@ -1,0 +1,10 @@
+# 调用api模块中的接口定义
+- config:
+    name: 验证获取access_token是否成功
+
+- test:
+    name: 调用获取token接口
+    api: api/get_access_token.yml
+    validate:
+      - eq: [content.expires_in,7200]
+
