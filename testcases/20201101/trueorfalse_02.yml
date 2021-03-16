@@ -1,0 +1,16 @@
+# 断言
+- config:
+    name: 打开xmx官网
+    base_url: http://www.hnxmxit.com
+
+
+- test:
+    name: 官网主页接口
+    request:
+      url: /
+      method: GET
+    extract:
+      reason: reason
+    validate:
+      - eq: [$reason,'OK']
+#      - {'check':$reason, 'comparator': 'eq','except': 'OK'}  # 一种写法

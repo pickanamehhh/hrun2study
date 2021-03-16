@@ -1,0 +1,20 @@
+# 获取响应数据3 (响应正文(json) )
+
+- config:
+    name: 验证 获取公众号已创建的标签
+    base_url: https://api.weixin.qq.com
+
+
+- test:
+    name: 调用获取公众号已创建的标签接口
+    request:
+      url: /cgi-bin/tags/get
+      method: GET
+      params:
+        access_token: 40_pTBk5R1POZr1Amw2iH_aYs_QD-Q6RmroJMwTmCMRVXuSO1oB9c8cKVir8otohjcZa5gup7IhZTurb18Ps4JqUKy3spl4M6UCAXqUXA7LIVlTeMlm5RgkzXaPMoLCnIVR1mjw6sFOPKn009rkGNKdAHAVCZ
+    extract:
+      bname: content.tags.1.name  # content 表示json根 遇到数组也用.
+    validate:
+      - eq: [$bname, 'one']
+
+
