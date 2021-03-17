@@ -155,11 +155,11 @@
   <table id="summary">
     <tr>
       <th>START AT</th>
-      <td colspan="4">2021-03-16T15:51:48.972271</td>
+      <td colspan="4">2021-03-17T15:32:28.594253</td>
     </tr>
     <tr>
       <th>DURATION</th>
-      <td colspan="4">2.510 seconds</td>
+      <td colspan="4">0.067 seconds</td>
     </tr>
     <tr>
       <th>PLATFORM</th>
@@ -174,8 +174,8 @@
     </tr>
     <tr>
       <td>total (details) =></td>
-      <td colspan="2">1 (1/0)</td>
-      <td colspan="2">1 (1/0/0/0)</td>
+      <td colspan="2">1 (0/1)</td>
+      <td colspan="2">2 (0/0/2/0)</td>
     </tr>
   </table>
 
@@ -183,13 +183,13 @@
 
   
   
-  <h3>验证能否打开湖南新梦想主页</h3>
+  <h3>标签查询用例</h3>
   <table id="suite_1" class="details">
     <tr>
-      <td>TOTAL: 1</td>
-      <td>SUCCESS: 1</td>
+      <td>TOTAL: 2</td>
+      <td>SUCCESS: 0</td>
       <td>FAILED: 0</td>
-      <td>ERROR: 0</td>
+      <td>ERROR: 2</td>
       <td>SKIPPED: 0</td>
     </tr>
     <tr>
@@ -203,9 +203,9 @@
     
     
     <tr id="record_1_1">
-      <th class="success" style="width:5em;">success</th>
-      <td colspan="2">接口名称 湖南新梦想主页接口</td>
-      <td style="text-align:center;width:6em;">2493.03 ms</td>
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">获取token_id</td>
+      <td style="text-align:center;width:6em;">56.20 ms</td>
       <td class="detail">
 
         
@@ -217,7 +217,7 @@
             <a class="close" href="#record_1_1_1">&times;</a>
 
             <div class="content">
-              <h3>Name: 接口名称 湖南新梦想主页接口</h3>
+              <h3>Name: 获取token_id</h3>
 
               
 
@@ -231,7 +231,7 @@
                       <th>url</th>
                       <td>
                         
-                            http://www.hnxmxit.com/
+                            https://api.weixin.qq.com/cgi-bin/token
                         
                       </td>
                     </tr>
@@ -249,12 +249,38 @@
                       <th>headers</th>
                       <td>
                         
-                            <pre>{
-  &#34;User-Agent&#34;: &#34;python-requests/2.24.0&#34;,
-  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
-  &#34;Accept&#34;: &#34;*/*&#34;,
-  &#34;Connection&#34;: &#34;keep-alive&#34;
-}</pre>
+                            <pre>{}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>params</th>
+                      <td>
+                        
+                            {
+  "grant_type": "client_credential",
+  "appid": "wx8708f96abc9abaf3",
+  "secret": "5be760a8fac19282515d47d326ab108b"
+}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>verify</th>
+                      <td>
+                        
+                            True
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>timeout</th>
+                      <td>
+                        
+                            120
                         
                       </td>
                     </tr>
@@ -267,55 +293,10 @@
                 <table>
                     
                       <tr>
-                        <th>ok</th>
-                        <td>
-                          
-                            True
-                          
-                        </td>
-                      </tr>
-                    
-                      <tr>
-                        <th>url</th>
-                        <td>
-                          
-                            http://www.hnxmxit.com/
-                          
-                        </td>
-                      </tr>
-                    
-                      <tr>
                         <th>status_code</th>
                         <td>
                           
-                            200
-                          
-                        </td>
-                      </tr>
-                    
-                      <tr>
-                        <th>reason</th>
-                        <td>
-                          
-                            OK
-                          
-                        </td>
-                      </tr>
-                    
-                      <tr>
-                        <th>cookies</th>
-                        <td>
-                          
-                            {'PHPSESSID': 'am1hkaen8rkpsoabufr77j2dc5', 'TP_onlineid': '3a8474254f0b21732c4e9c5d5d10db52', 'TP_think_language': 'cn'}
-                          
-                        </td>
-                      </tr>
-                    
-                      <tr>
-                        <th>encoding</th>
-                        <td>
-                          
-                            utf-8
+                            N/A
                           
                         </td>
                       </tr>
@@ -324,21 +305,16 @@
                         <th>headers</th>
                         <td>
                           
-                            <pre>{
-  &#34;Date&#34;: &#34;Tue, 16 Mar 2021 15:52:05 GMT&#34;,
-  &#34;Server&#34;: &#34;Apache&#34;,
-  &#34;Expires&#34;: &#34;Thu, 19 Nov 1981 08:52:00 GMT&#34;,
-  &#34;Pragma&#34;: &#34;no-cache&#34;,
-  &#34;Cache-control&#34;: &#34;private&#34;,
-  &#34;X-Powered-By&#34;: &#34;ThinkPHP&#34;,
-  &#34;Content-Encoding&#34;: &#34;gzip&#34;,
-  &#34;Vary&#34;: &#34;Accept-Encoding&#34;,
-  &#34;Set-Cookie&#34;: &#34;PHPSESSID=am1hkaen8rkpsoabufr77j2dc5; path=/, TP_think_language=cn; path=/, TP_onlineid=3a8474254f0b21732c4e9c5d5d10db52; path=/&#34;,
-  &#34;Keep-Alive&#34;: &#34;timeout=5, max=100&#34;,
-  &#34;Connection&#34;: &#34;Keep-Alive&#34;,
-  &#34;Transfer-Encoding&#34;: &#34;chunked&#34;,
-  &#34;Content-Type&#34;: &#34;text/html; charset=utf-8&#34;
-}</pre>
+                            <pre>{}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
                           
                         </td>
                       </tr>
@@ -347,17 +323,6 @@
                         <th>content_type</th>
                         <td>
                           
-                            text/html; charset=utf-8
-                          
-                        </td>
-                      </tr>
-                    
-                      <tr>
-                        <th>body</th>
-                        <td>
-                          
-                            
-                              <pre>&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Transitional//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&#34;&gt;&lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34;&gt;&lt;head&gt;&lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34; /&gt;&lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;IE=edge,chrome=1&#34; /&gt;&lt;meta http-equiv=&#34;Access-Control-Allow-Origin&#34; content=&#34;*&#34; /&gt;&lt;meta content=&#34;width=device-width, initial-scale=1&#34; name=&#34;viewport&#34;/&gt;&lt;meta name=&#34;robots&#34; content=&#34;index, follow&#34; /&gt;&lt;meta name=&#34;keywords&#34; content=&#34;新梦 ... OMITTED 42803 CHARACTORS ...</pre>
                             
                           
                         </td>
@@ -371,59 +336,164 @@
                 <div style="overflow: auto">
                 
                 
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
                 <table>
-                    <tr>
-                      <th>check</th>
-                      <th>comparator</th>
-                      <th>expect value</th>
-                      <th>actual value</th>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>0</td>
                     </tr>
-                    
-                    <tr>
-                      
-                      <td class="passed">
-                      
-                        status_code
-                      </td>
-                      <td>equals</td>
-                      <td>200</td>
-                      <td>200</td>
-                    </tr>
-                    
-                    <tr>
-                      
-                      <td class="passed">
-                      
-                        status_code
-                      </td>
-                      <td>equals</td>
-                      <td>200</td>
-                      <td>200</td>
-                    </tr>
-                    
-                    <tr>
-                      
-                      <td class="passed">
-                      
-                        status_code
-                      </td>
-                      <td>equals</td>
-                      <td>200</td>
-                      <td>200</td>
-                    </tr>
-                    
-                    <tr>
-                      
-                      <td class="passed">
-                      
-                        status_code
-                      </td>
-                      <td>equals</td>
-                      <td>200</td>
-                      <td>200</td>
-                    </tr>
-                    
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>56.2</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>0.0</td>
+                  </tr>
                 </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_1">traceback</a>
+          <div id="popup_attachment_1_1" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_1">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1076)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host=&#39;api.weixin.qq.com&#39;, port=443): Max retries exceeded with url: /cgi-bin/token?grant_type=client_credential&amp;appid=wx8708f96abc9abaf3&amp;secret=5be760a8fac19282515d47d326ab108b (Caused by SSLError(SSLCertVerificationError(1, &#39;[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1076)&#39;)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+requests.exceptions.SSLError: HTTPSConnectionPool(host=&#39;api.weixin.qq.com&#39;, port=443): Max retries exceeded with url: /cgi-bin/token?grant_type=client_credential&amp;appid=wx8708f96abc9abaf3&amp;secret=5be760a8fac19282515d47d326ab108b (Caused by SSLError(SSLCertVerificationError(1, &#39;[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1076)&#39;)))
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_2">
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">获取公众号已创建的标签</td>
+      <td style="text-align:center;width:6em;">N/A ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_2_1">log-1</a>
+        <div id="popup_log_1_2_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_2_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: </h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            N/A
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            N/A
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            N/A
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
                 
 
                 
@@ -435,15 +505,15 @@
                 <table>
                   <tr>
                       <th>content_size(bytes)</th>
-                      <td>54046</td>
+                      <td>N/A</td>
                     </tr>
                   <tr>
                     <th>response_time(ms)</th>
-                    <td>2493.03</td>
+                    <td>N/A</td>
                   </tr>
                   <tr>
                     <th>elapsed(ms)</th>
-                    <td>455.002</td>
+                    <td>N/A</td>
                   </tr>
                 </table>
               </div>
@@ -453,6 +523,22 @@
         </div>
         
 
+        
+          <a class="button" href="#popup_attachment_1_2">traceback</a>
+          <div id="popup_attachment_1_2" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_2">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+KeyError: &#39;token_id&#39;
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+httprunner.exceptions.VariableNotFound: token_id is not found.
+</pre></div>
+            </div>
+          </div>
         
 
       </td>

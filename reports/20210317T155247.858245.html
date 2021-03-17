@@ -155,11 +155,11 @@
   <table id="summary">
     <tr>
       <th>START AT</th>
-      <td colspan="4">2020-12-17T00:13:39.071071</td>
+      <td colspan="4">2021-03-17T15:52:47.858245</td>
     </tr>
     <tr>
       <th>DURATION</th>
-      <td colspan="4">0.016 seconds</td>
+      <td colspan="4">0.138 seconds</td>
     </tr>
     <tr>
       <th>PLATFORM</th>
@@ -174,8 +174,8 @@
     </tr>
     <tr>
       <td>total (details) =></td>
-      <td colspan="2">1 (0/1)</td>
-      <td colspan="2">1 (0/0/1/0)</td>
+      <td colspan="2">1 (1/0)</td>
+      <td colspan="2">1 (1/0/0/0)</td>
     </tr>
   </table>
 
@@ -183,13 +183,13 @@
 
   
   
-  <h3>验证百度搜索</h3>
+  <h3>百度搜索</h3>
   <table id="suite_1" class="details">
     <tr>
       <td>TOTAL: 1</td>
-      <td>SUCCESS: 0</td>
+      <td>SUCCESS: 1</td>
       <td>FAILED: 0</td>
-      <td>ERROR: 1</td>
+      <td>ERROR: 0</td>
       <td>SKIPPED: 0</td>
     </tr>
     <tr>
@@ -203,9 +203,9 @@
     
     
     <tr id="record_1_1">
-      <th class="error" style="width:5em;">error</th>
-      <td colspan="2">调用百度接口</td>
-      <td style="text-align:center;width:6em;">N/A ms</td>
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">执行搜索接口</td>
+      <td style="text-align:center;width:6em;">126.03 ms</td>
       <td class="detail">
 
         
@@ -217,7 +217,7 @@
             <a class="close" href="#record_1_1_1">&times;</a>
 
             <div class="content">
-              <h3>Name: 调用百度接口</h3>
+              <h3>Name: 执行搜索接口</h3>
 
               
 
@@ -231,7 +231,7 @@
                       <th>url</th>
                       <td>
                         
-                            https://www.baidu.com/s
+                            https://www.baidu.com/s?wd=newdream
                         
                       </td>
                     </tr>
@@ -249,64 +249,12 @@
                       <th>headers</th>
                       <td>
                         
-                            <pre>{}</pre>
-                        
-                      </td>
-                    </tr>
-                  
-                    <tr>
-                      <th>params</th>
-                      <td>
-                        
-                            {
-  "wd": "newdream"
-}
-                        
-                      </td>
-                    </tr>
-                  
-                    <tr>
-                      <th>hearder</th>
-                      <td>
-                        
-                            {
-  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
-  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
-}
-                        
-                      </td>
-                    </tr>
-                  
-                    <tr>
-                      <th>validata</th>
-                      <td>
-                        
-                            [
-  {
-    "eq": [
-      "status_code",
-      200
-    ]
-  }
-]
-                        
-                      </td>
-                    </tr>
-                  
-                    <tr>
-                      <th>verify</th>
-                      <td>
-                        
-                            True
-                        
-                      </td>
-                    </tr>
-                  
-                    <tr>
-                      <th>timeout</th>
-                      <td>
-                        
-                            120
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;python-requests/2.24.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;
+}</pre>
                         
                       </td>
                     </tr>
@@ -319,19 +267,46 @@
                 <table>
                     
                       <tr>
-                        <th>status_code</th>
+                        <th>ok</th>
                         <td>
                           
-                            N/A
+                            True
                           
                         </td>
                       </tr>
                     
                       <tr>
-                        <th>headers</th>
+                        <th>url</th>
                         <td>
                           
-                            <pre>{}</pre>
+                            https://www.baidu.com/s?wd=newdream
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {'BAIDUID': 'A671AD044DE3F0023E8067C69D89820D:FG=1', 'BIDUPSID': 'A671AD044DE3F002786D556BFDAB0B5E', 'PSTM': '1615996389', 'BD_NOT_HTTPS': '1'}
                           
                         </td>
                       </tr>
@@ -340,7 +315,30 @@
                         <th>encoding</th>
                         <td>
                           
-                            None
+                            ISO-8859-1
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Accept-Ranges&#34;: &#34;bytes&#34;,
+  &#34;Cache-Control&#34;: &#34;no-cache&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Content-Length&#34;: &#34;227&#34;,
+  &#34;Content-Type&#34;: &#34;text/html&#34;,
+  &#34;Date&#34;: &#34;Wed, 17 Mar 2021 15:53:09 GMT&#34;,
+  &#34;P3p&#34;: &#34;CP=\&#34; OTI DSP COR IVA OUR IND COM \&#34;, CP=\&#34; OTI DSP COR IVA OUR IND COM \&#34;&#34;,
+  &#34;Pragma&#34;: &#34;no-cache&#34;,
+  &#34;Server&#34;: &#34;BWS/1.1&#34;,
+  &#34;Set-Cookie&#34;: &#34;BD_NOT_HTTPS=1; path=/; Max-Age=300, BIDUPSID=A671AD044DE3F002786D556BFDAB0B5E; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com, PSTM=1615996389; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com, BAIDUID=A671AD044DE3F0023E8067C69D89820D:FG=1; max-age=31536000; expires=Thu, 17-Mar-22 15:53:09 GMT; domain=.baidu.com; path=/; version=1; comment=bd&#34;,
+  &#34;Strict-Transport-Security&#34;: &#34;max-age=0&#34;,
+  &#34;Traceid&#34;: &#34;1615996389072446644214080161161577566502&#34;,
+  &#34;X-Ua-Compatible&#34;: &#34;IE=Edge,chrome=1&#34;
+}</pre>
                           
                         </td>
                       </tr>
@@ -349,6 +347,26 @@
                         <th>content_type</th>
                         <td>
                           
+                            text/html
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>&lt;html&gt;
+&lt;head&gt;
+	&lt;script&gt;
+		location.replace(location.href.replace(&#34;https://&#34;,&#34;http://&#34;));
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;noscript&gt;&lt;meta http-equiv=&#34;refresh&#34; content=&#34;0;url=http://www.baidu.com/&#34;&gt;&lt;/noscript&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
                             
                           
                         </td>
@@ -362,6 +380,27 @@
                 <div style="overflow: auto">
                 
                 
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                </table>
+                
 
                 
                 
@@ -372,15 +411,15 @@
                 <table>
                   <tr>
                       <th>content_size(bytes)</th>
-                      <td>N/A</td>
+                      <td>227</td>
                     </tr>
                   <tr>
                     <th>response_time(ms)</th>
-                    <td>N/A</td>
+                    <td>126.03</td>
                   </tr>
                   <tr>
                     <th>elapsed(ms)</th>
-                    <td>N/A</td>
+                    <td>122.115</td>
                   </tr>
                 </table>
               </div>
@@ -390,17 +429,6 @@
         </div>
         
 
-        
-          <a class="button" href="#popup_attachment_1_1">traceback</a>
-          <div id="popup_attachment_1_1" class="overlay">
-            <div class="popup">
-              <h2>Traceback Message</h2>
-              <a class="close" href="#record_1_1">&times;</a>
-              <div class="content"><pre>Traceback (most recent call last):
-TypeError: request() got an unexpected keyword argument &#39;hearder&#39;
-</pre></div>
-            </div>
-          </div>
         
 
       </td>

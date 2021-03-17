@@ -15,6 +15,7 @@
         secret: 5be760a8fac19282515d47d326ab108b
     extract:
       token_id: content.access_token
+    verify: False
     validate:
       - eq: ['status_code',200]
 

@@ -155,11 +155,11 @@
   <table id="summary">
     <tr>
       <th>START AT</th>
-      <td colspan="4">2021-03-16T16:18:16.439239</td>
+      <td colspan="4">2021-03-17T15:38:14.781962</td>
     </tr>
     <tr>
       <th>DURATION</th>
-      <td colspan="4">0.201 seconds</td>
+      <td colspan="4">0.230 seconds</td>
     </tr>
     <tr>
       <th>PLATFORM</th>
@@ -175,7 +175,7 @@
     <tr>
       <td>total (details) =></td>
       <td colspan="2">1 (1/0)</td>
-      <td colspan="2">1 (1/0/0/0)</td>
+      <td colspan="2">2 (2/0/0/0)</td>
     </tr>
   </table>
 
@@ -183,11 +183,11 @@
 
   
   
-  <h3>验证获取access_token是否成功</h3>
+  <h3>标签查询用例</h3>
   <table id="suite_1" class="details">
     <tr>
-      <td>TOTAL: 1</td>
-      <td>SUCCESS: 1</td>
+      <td>TOTAL: 2</td>
+      <td>SUCCESS: 2</td>
       <td>FAILED: 0</td>
       <td>ERROR: 0</td>
       <td>SKIPPED: 0</td>
@@ -204,8 +204,8 @@
     
     <tr id="record_1_1">
       <th class="success" style="width:5em;">success</th>
-      <td colspan="2">调用获取token接口</td>
-      <td style="text-align:center;width:6em;">188.96 ms</td>
+      <td colspan="2">获取token_id</td>
+      <td style="text-align:center;width:6em;">158.95 ms</td>
       <td class="detail">
 
         
@@ -217,7 +217,7 @@
             <a class="close" href="#record_1_1_1">&times;</a>
 
             <div class="content">
-              <h3>Name: 调用获取token接口</h3>
+              <h3>Name: 获取token_id</h3>
 
               
 
@@ -327,7 +327,7 @@
                             <pre>{
   &#34;Connection&#34;: &#34;keep-alive&#34;,
   &#34;Content-Type&#34;: &#34;application/json; encoding=utf-8&#34;,
-  &#34;Date&#34;: &#34;Tue, 16 Mar 2021 16:18:35 GMT&#34;,
+  &#34;Date&#34;: &#34;Wed, 17 Mar 2021 15:38:36 GMT&#34;,
   &#34;Content-Length&#34;: &#34;194&#34;
 }</pre>
                           
@@ -349,7 +349,7 @@
                           
                             
                               <pre>{
-  &#34;access_token&#34;: &#34;43_l5EsQ31pWt3W1cxIOAHf_788-59jX2CVLBs78itF2tLnUxxZpe0oU6naLtzwsbbGdOQf4qp5cOg2kCro1HYwf5WBHdG3w6r7cNI6OIJFLqifnaNMwg1wMUWH15Q2fIhzuW-8FjoXjhnDuX5-JRAgAIAUCL&#34;,
+  &#34;access_token&#34;: &#34;43_K01lLUgR_kIVES3jEwVBeszyBYHYoWf9w51eO5e1SgoQ64Os8sgX3sONnM7HuX3kBAGLYZgTs65OWQlcRHa61wDkUKv8h1VJ4NIr5rxHVE4nQxjq7mHTZzRKld4EHQ7wkLVQK1PwaIjDheSQWDPfAFAHOA&#34;,
   &#34;expires_in&#34;: 7200
 }</pre>
                             
@@ -384,17 +384,6 @@
                       <td>200</td>
                     </tr>
                     
-                    <tr>
-                      
-                      <td class="passed">
-                      
-                        content.expires_in
-                      </td>
-                      <td>equals</td>
-                      <td>7200</td>
-                      <td>7200</td>
-                    </tr>
-                    
                 </table>
                 
 
@@ -411,11 +400,240 @@
                     </tr>
                   <tr>
                     <th>response_time(ms)</th>
-                    <td>188.96</td>
+                    <td>158.95</td>
                   </tr>
                   <tr>
                     <th>elapsed(ms)</th>
-                    <td>184.116</td>
+                    <td>154.746</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_2">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">获取公众号已创建的标签</td>
+      <td style="text-align:center;width:6em;">61.56 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_2_1">log-1</a>
+        <div id="popup_log_1_2_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_2_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 获取公众号已创建的标签</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            https://api.weixin.qq.com/cgi-bin/tags/get?access_token=43_K01lLUgR_kIVES3jEwVBeszyBYHYoWf9w51eO5e1SgoQ64Os8sgX3sONnM7HuX3kBAGLYZgTs65OWQlcRHa61wDkUKv8h1VJ4NIr5rxHVE4nQxjq7mHTZzRKld4EHQ7wkLVQK1PwaIjDheSQWDPfAFAHOA
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;python-requests/2.24.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://api.weixin.qq.com/cgi-bin/tags/get?access_token=43_K01lLUgR_kIVES3jEwVBeszyBYHYoWf9w51eO5e1SgoQ64Os8sgX3sONnM7HuX3kBAGLYZgTs65OWQlcRHa61wDkUKv8h1VJ4NIr5rxHVE4nQxjq7mHTZzRKld4EHQ7wkLVQK1PwaIjDheSQWDPfAFAHOA
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Content-Type&#34;: &#34;application/json; encoding=utf-8&#34;,
+  &#34;Date&#34;: &#34;Wed, 17 Mar 2021 15:38:36 GMT&#34;,
+  &#34;Content-Length&#34;: &#34;82&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json; encoding=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;tags&#34;: [
+    {
+      &#34;id&#34;: 2,
+      &#34;name&#34;: &#34;星标组&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 100,
+      &#34;name&#34;: &#34;one&#34;,
+      &#34;count&#34;: 0
+    }
+  ]
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        LazyString($bname)
+                      </td>
+                      <td>equals</td>
+                      <td>one</td>
+                      <td>one</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>82</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>61.56</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>60.088</td>
                   </tr>
                 </table>
               </div>

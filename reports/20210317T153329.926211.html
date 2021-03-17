@@ -155,11 +155,11 @@
   <table id="summary">
     <tr>
       <th>START AT</th>
-      <td colspan="4">2021-01-05T15:17:04.453390</td>
+      <td colspan="4">2021-03-17T15:33:29.926211</td>
     </tr>
     <tr>
       <th>DURATION</th>
-      <td colspan="4">0.171 seconds</td>
+      <td colspan="4">0.255 seconds</td>
     </tr>
     <tr>
       <th>PLATFORM</th>
@@ -175,7 +175,7 @@
     <tr>
       <td>total (details) =></td>
       <td colspan="2">1 (1/0)</td>
-      <td colspan="2">1 (1/0/0/0)</td>
+      <td colspan="2">2 (2/0/0/0)</td>
     </tr>
   </table>
 
@@ -183,11 +183,11 @@
 
   
   
-  <h3>验证 获取公众号已创建的标签</h3>
+  <h3>标签查询用例</h3>
   <table id="suite_1" class="details">
     <tr>
-      <td>TOTAL: 1</td>
-      <td>SUCCESS: 1</td>
+      <td>TOTAL: 2</td>
+      <td>SUCCESS: 2</td>
       <td>FAILED: 0</td>
       <td>ERROR: 0</td>
       <td>SKIPPED: 0</td>
@@ -204,8 +204,8 @@
     
     <tr id="record_1_1">
       <th class="success" style="width:5em;">success</th>
-      <td colspan="2">调用获取公众号已创建的标签接口</td>
-      <td style="text-align:center;width:6em;">154.98 ms</td>
+      <td colspan="2">获取token_id</td>
+      <td style="text-align:center;width:6em;">161.00 ms</td>
       <td class="detail">
 
         
@@ -217,7 +217,7 @@
             <a class="close" href="#record_1_1_1">&times;</a>
 
             <div class="content">
-              <h3>Name: 调用获取公众号已创建的标签接口</h3>
+              <h3>Name: 获取token_id</h3>
 
               
 
@@ -231,7 +231,7 @@
                       <th>url</th>
                       <td>
                         
-                            https://api.weixin.qq.com/cgi-bin/tags/get?access_token=40_pTBk5R1POZr1Amw2iH_aYs_QD-Q6RmroJMwTmCMRVXuSO1oB9c8cKVir8otohjcZa5gup7IhZTurb18Ps4JqUKy3spl4M6UCAXqUXA7LIVlTeMlm5RgkzXaPMoLCnIVR1mjw6sFOPKn009rkGNKdAHAVCZ
+                            https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx8708f96abc9abaf3&secret=5be760a8fac19282515d47d326ab108b
                         
                       </td>
                     </tr>
@@ -279,7 +279,7 @@
                         <th>url</th>
                         <td>
                           
-                            https://api.weixin.qq.com/cgi-bin/tags/get?access_token=40_pTBk5R1POZr1Amw2iH_aYs_QD-Q6RmroJMwTmCMRVXuSO1oB9c8cKVir8otohjcZa5gup7IhZTurb18Ps4JqUKy3spl4M6UCAXqUXA7LIVlTeMlm5RgkzXaPMoLCnIVR1mjw6sFOPKn009rkGNKdAHAVCZ
+                            https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx8708f96abc9abaf3&secret=5be760a8fac19282515d47d326ab108b
                           
                         </td>
                       </tr>
@@ -327,7 +327,226 @@
                             <pre>{
   &#34;Connection&#34;: &#34;keep-alive&#34;,
   &#34;Content-Type&#34;: &#34;application/json; encoding=utf-8&#34;,
-  &#34;Date&#34;: &#34;Tue, 05 Jan 2021 15:17:37 GMT&#34;,
+  &#34;Date&#34;: &#34;Wed, 17 Mar 2021 15:33:51 GMT&#34;,
+  &#34;Content-Length&#34;: &#34;194&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json; encoding=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;access_token&#34;: &#34;43_Yt0xFMFHal1JulYiixBMiOtHJJKqjpfDfC0f34Q_gCsPAecdC312taM98dvPVTh405W-khaiF8Ccye3dRGg-9YOs5Bzt69U1F7sB7qCnpDj2tKfOz4MGb1HQa48cv2QGoZSMnUiv0nY8fG1jOMXaAIAAYJ&#34;,
+  &#34;expires_in&#34;: 7200
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>194</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>161.0</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>157.045</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_2">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">获取公众号已创建的标签</td>
+      <td style="text-align:center;width:6em;">80.92 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_2_1">log-1</a>
+        <div id="popup_log_1_2_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_2_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 获取公众号已创建的标签</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            https://api.weixin.qq.com/cgi-bin/tags/get?access_token=43_Yt0xFMFHal1JulYiixBMiOtHJJKqjpfDfC0f34Q_gCsPAecdC312taM98dvPVTh405W-khaiF8Ccye3dRGg-9YOs5Bzt69U1F7sB7qCnpDj2tKfOz4MGb1HQa48cv2QGoZSMnUiv0nY8fG1jOMXaAIAAYJ
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;python-requests/2.24.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://api.weixin.qq.com/cgi-bin/tags/get?access_token=43_Yt0xFMFHal1JulYiixBMiOtHJJKqjpfDfC0f34Q_gCsPAecdC312taM98dvPVTh405W-khaiF8Ccye3dRGg-9YOs5Bzt69U1F7sB7qCnpDj2tKfOz4MGb1HQa48cv2QGoZSMnUiv0nY8fG1jOMXaAIAAYJ
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Content-Type&#34;: &#34;application/json; encoding=utf-8&#34;,
+  &#34;Date&#34;: &#34;Wed, 17 Mar 2021 15:33:51 GMT&#34;,
   &#34;Content-Length&#34;: &#34;82&#34;
 }</pre>
                           
@@ -410,11 +629,11 @@
                     </tr>
                   <tr>
                     <th>response_time(ms)</th>
-                    <td>154.98</td>
+                    <td>80.92</td>
                   </tr>
                   <tr>
                     <th>elapsed(ms)</th>
-                    <td>150.174</td>
+                    <td>79.479</td>
                   </tr>
                 </table>
               </div>
