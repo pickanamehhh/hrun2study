@@ -6,7 +6,9 @@
 
 - test:
     name: 执行搜索接口
-    skip: 无条件跳过
+    # skip: 无条件跳过
+    # skipIf: 1+1  # true  # ${get_true()}  # 非0非空均为true，为true时，为true时执行skipTf,即跳过该条测试用例
+    skipUnless: ${get_true()} # false  # 为0为空均为false，为false时执行skipUnless,即跳过该条测试用例
     request:
       method: GET
       url: /s

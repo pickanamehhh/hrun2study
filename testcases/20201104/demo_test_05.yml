@@ -1,0 +1,19 @@
+#模拟post请求
+- config:
+    name: 创建标签
+    base_url: https://api.weixin.qq.com
+    variables:
+      - token: ${get_access_token()}
+
+
+- test:
+    name: 调用创建用户接口
+    skipUnless: $token
+    request:
+      url: /cgi-bin/tags/create
+      method: POST
+    params:
+      access_token: $token
+    json: { "tag" : { "name" : "newdream_p3p4" } }
+    validate:
+      - eq: ['status_code',200]
