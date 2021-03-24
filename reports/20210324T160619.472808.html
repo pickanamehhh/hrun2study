@@ -155,11 +155,11 @@
   <table id="summary">
     <tr>
       <th>START AT</th>
-      <td colspan="4">2021-03-17T15:32:28.594253</td>
+      <td colspan="4">2021-03-24T16:06:19.472808</td>
     </tr>
     <tr>
       <th>DURATION</th>
-      <td colspan="4">0.067 seconds</td>
+      <td colspan="4">0.501 seconds</td>
     </tr>
     <tr>
       <th>PLATFORM</th>
@@ -174,8 +174,8 @@
     </tr>
     <tr>
       <td>total (details) =></td>
-      <td colspan="2">1 (0/1)</td>
-      <td colspan="2">2 (0/0/2/0)</td>
+      <td colspan="2">1 (1/0)</td>
+      <td colspan="2">2 (2/0/0/0)</td>
     </tr>
   </table>
 
@@ -183,13 +183,13 @@
 
   
   
-  <h3>标签查询用例</h3>
+  <h3>添加袋子是否成功</h3>
   <table id="suite_1" class="details">
     <tr>
       <td>TOTAL: 2</td>
-      <td>SUCCESS: 0</td>
+      <td>SUCCESS: 2</td>
       <td>FAILED: 0</td>
-      <td>ERROR: 2</td>
+      <td>ERROR: 0</td>
       <td>SKIPPED: 0</td>
     </tr>
     <tr>
@@ -203,9 +203,9 @@
     
     
     <tr id="record_1_1">
-      <th class="error" style="width:5em;">error</th>
-      <td colspan="2">获取token_id</td>
-      <td style="text-align:center;width:6em;">56.20 ms</td>
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">请求获取token接口</td>
+      <td style="text-align:center;width:6em;">327.18 ms</td>
       <td class="detail">
 
         
@@ -217,7 +217,7 @@
             <a class="close" href="#record_1_1_1">&times;</a>
 
             <div class="content">
-              <h3>Name: 获取token_id</h3>
+              <h3>Name: 请求获取token接口</h3>
 
               
 
@@ -231,7 +231,7 @@
                       <th>url</th>
                       <td>
                         
-                            https://api.weixin.qq.com/cgi-bin/token
+                            https://uat-afl-erp-api.aihuishou.com/mine/login
                         
                       </td>
                     </tr>
@@ -240,7 +240,7 @@
                       <th>method</th>
                       <td>
                         
-                            GET
+                            POST
                         
                       </td>
                     </tr>
@@ -249,38 +249,26 @@
                       <th>headers</th>
                       <td>
                         
-                            <pre>{}</pre>
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;python-requests/2.24.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Content-Length&#34;: &#34;209&#34;,
+  &#34;Content-Type&#34;: &#34;application/json&#34;
+}</pre>
                         
                       </td>
                     </tr>
                   
                     <tr>
-                      <th>params</th>
+                      <th>body</th>
                       <td>
                         
-                            {
-  "grant_type": "client_credential",
-  "appid": "wx8708f96abc9abaf3",
-  "secret": "5be760a8fac19282515d47d326ab108b"
-}
-                        
-                      </td>
-                    </tr>
-                  
-                    <tr>
-                      <th>verify</th>
-                      <td>
-                        
-                            True
-                        
-                      </td>
-                    </tr>
-                  
-                    <tr>
-                      <th>timeout</th>
-                      <td>
-                        
-                            120
+                            <pre>{
+  &#34;account&#34;: &#34;hubiao&#34;,
+  &#34;password&#34;: &#34;U0lETj6Onbkq1JWKmDMTtb0UU3GgbmI+dHxoa6lh+mWVZsWenyXs40DHo7dSNsZaHc7hkTWlUcW9QnmziEb45WYC9fPs7ZMkVbAqXTn9QI0MMLvuT7/CRkvSXUI0MDQAX6+bE3g8CHbRiS/13JiEjyzfPB1BIXzRdPvRWKpGQSo=&#34;
+}</pre>
                         
                       </td>
                     </tr>
@@ -293,19 +281,46 @@
                 <table>
                     
                       <tr>
-                        <th>status_code</th>
+                        <th>ok</th>
                         <td>
                           
-                            N/A
+                            True
                           
                         </td>
                       </tr>
                     
                       <tr>
-                        <th>headers</th>
+                        <th>url</th>
                         <td>
                           
-                            <pre>{}</pre>
+                            https://uat-afl-erp-api.aihuishou.com/mine/login
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
                           
                         </td>
                       </tr>
@@ -314,7 +329,29 @@
                         <th>encoding</th>
                         <td>
                           
-                            None
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Date&#34;: &#34;Wed, 24 Mar 2021 16:06:19 GMT&#34;,
+  &#34;Content-Type&#34;: &#34;application/json;charset=UTF-8&#34;,
+  &#34;Content-Length&#34;: &#34;343&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;cache-control&#34;: &#34;no-cache, no-store, max-age=0, must-revalidate&#34;,
+  &#34;expires&#34;: &#34;0&#34;,
+  &#34;pragma&#34;: &#34;no-cache&#34;,
+  &#34;x-content-type-options&#34;: &#34;nosniff&#34;,
+  &#34;x-envoy-decorator-operation&#34;: &#34;traefik-ingress-lb.kube-system.svc.cluster.local:80/*&#34;,
+  &#34;x-envoy-upstream-service-time&#34;: &#34;251&#34;,
+  &#34;x-frame-options&#34;: &#34;DENY&#34;,
+  &#34;x-xss-protection&#34;: &#34;1; mode=block&#34;
+}</pre>
                           
                         </td>
                       </tr>
@@ -323,6 +360,23 @@
                         <th>content_type</th>
                         <td>
                           
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;code&#34;: 200,
+  &#34;resultMessage&#34;: &#34;&#34;,
+  &#34;data&#34;: {
+    &#34;token&#34;: &#34;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJTVTIwMTkwODEzMDQyMDM0NjYyMjY4IiwiZXAiOiIrRFJjaUZNR0tBWThNa296SlV0VkdGK09GaHBnR2tPV1RWSlhpajhjcExYT2w5NEdmRVliNDN6azFvWlJ5UWRFcjNORm9McmJRU3BteFVJNUFoZnNoQT09IiwiZXhwIjoxNzQ2MjAxOTc5LCJ0eXBlIjoibmV3In0.G-wfMgAUO_LzQBXnNEtucxT5Ih7wsAskx2pW8ny02Ig&#34;
+  }
+}</pre>
                             
                           
                         </td>
@@ -336,6 +390,38 @@
                 <div style="overflow: auto">
                 
                 
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.code
+                      </td>
+                      <td>equals</td>
+                      <td>LazyString($code)</td>
+                      <td>200</td>
+                    </tr>
+                    
+                </table>
+                
 
                 
                 
@@ -346,15 +432,15 @@
                 <table>
                   <tr>
                       <th>content_size(bytes)</th>
-                      <td>0</td>
+                      <td>343</td>
                     </tr>
                   <tr>
                     <th>response_time(ms)</th>
-                    <td>56.2</td>
+                    <td>327.18</td>
                   </tr>
                   <tr>
                     <th>elapsed(ms)</th>
-                    <td>0.0</td>
+                    <td>321.048</td>
                   </tr>
                 </table>
               </div>
@@ -365,27 +451,6 @@
         
 
         
-          <a class="button" href="#popup_attachment_1_1">traceback</a>
-          <div id="popup_attachment_1_1" class="overlay">
-            <div class="popup">
-              <h2>Traceback Message</h2>
-              <a class="close" href="#record_1_1">&times;</a>
-              <div class="content"><pre>Traceback (most recent call last):
-ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1076)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host=&#39;api.weixin.qq.com&#39;, port=443): Max retries exceeded with url: /cgi-bin/token?grant_type=client_credential&amp;appid=wx8708f96abc9abaf3&amp;secret=5be760a8fac19282515d47d326ab108b (Caused by SSLError(SSLCertVerificationError(1, &#39;[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1076)&#39;)))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-requests.exceptions.SSLError: HTTPSConnectionPool(host=&#39;api.weixin.qq.com&#39;, port=443): Max retries exceeded with url: /cgi-bin/token?grant_type=client_credential&amp;appid=wx8708f96abc9abaf3&amp;secret=5be760a8fac19282515d47d326ab108b (Caused by SSLError(SSLCertVerificationError(1, &#39;[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1076)&#39;)))
-</pre></div>
-            </div>
-          </div>
-        
 
       </td>
     </tr>
@@ -393,9 +458,9 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host=&#39;api.weixin.qq.com&#3
     
     
     <tr id="record_1_2">
-      <th class="error" style="width:5em;">error</th>
-      <td colspan="2">获取公众号已创建的标签</td>
-      <td style="text-align:center;width:6em;">N/A ms</td>
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">请求添加袋子接口</td>
+      <td style="text-align:center;width:6em;">153.73 ms</td>
       <td class="detail">
 
         
@@ -407,7 +472,7 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host=&#39;api.weixin.qq.com&#3
             <a class="close" href="#record_1_2_1">&times;</a>
 
             <div class="content">
-              <h3>Name: </h3>
+              <h3>Name: 请求添加袋子接口</h3>
 
               
 
@@ -421,7 +486,7 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host=&#39;api.weixin.qq.com&#3
                       <th>url</th>
                       <td>
                         
-                            N/A
+                            https://uat-afl-erp-api.aihuishou.com/bags/add
                         
                       </td>
                     </tr>
@@ -430,7 +495,7 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host=&#39;api.weixin.qq.com&#3
                       <th>method</th>
                       <td>
                         
-                            N/A
+                            POST
                         
                       </td>
                     </tr>
@@ -439,7 +504,26 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host=&#39;api.weixin.qq.com&#3
                       <th>headers</th>
                       <td>
                         
-                            <pre>{}</pre>
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;python-requests/2.24.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;authorization&#34;: &#34;Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJTVTIwMTkwODEzMDQyMDM0NjYyMjY4IiwiZXAiOiIrRFJjaUZNR0tBWThNa296SlV0VkdGK09GaHBnR2tPV1RWSlhpajhjcExYT2w5NEdmRVliNDN6azFvWlJ5UWRFcjNORm9McmJRU3BteFVJNUFoZnNoQT09IiwiZXhwIjoxNzQ2MjAxOTc5LCJ0eXBlIjoibmV3In0.G-wfMgAUO_LzQBXnNEtucxT5Ih7wsAskx2pW8ny02Ig&#34;,
+  &#34;Content-Length&#34;: &#34;14&#34;,
+  &#34;Content-Type&#34;: &#34;application/json&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;bagsNum&#34;: 1
+}</pre>
                         
                       </td>
                     </tr>
@@ -452,19 +536,46 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host=&#39;api.weixin.qq.com&#3
                 <table>
                     
                       <tr>
-                        <th>status_code</th>
+                        <th>ok</th>
                         <td>
                           
-                            N/A
+                            True
                           
                         </td>
                       </tr>
                     
                       <tr>
-                        <th>headers</th>
+                        <th>url</th>
                         <td>
                           
-                            <pre>{}</pre>
+                            https://uat-afl-erp-api.aihuishou.com/bags/add
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
                           
                         </td>
                       </tr>
@@ -473,7 +584,29 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host=&#39;api.weixin.qq.com&#3
                         <th>encoding</th>
                         <td>
                           
-                            None
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Date&#34;: &#34;Wed, 24 Mar 2021 16:06:20 GMT&#34;,
+  &#34;Content-Type&#34;: &#34;application/json;charset=UTF-8&#34;,
+  &#34;Content-Length&#34;: &#34;94&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;cache-control&#34;: &#34;no-cache, no-store, max-age=0, must-revalidate&#34;,
+  &#34;expires&#34;: &#34;0&#34;,
+  &#34;pragma&#34;: &#34;no-cache&#34;,
+  &#34;x-content-type-options&#34;: &#34;nosniff&#34;,
+  &#34;x-envoy-decorator-operation&#34;: &#34;traefik-ingress-lb.kube-system.svc.cluster.local:80/*&#34;,
+  &#34;x-envoy-upstream-service-time&#34;: &#34;135&#34;,
+  &#34;x-frame-options&#34;: &#34;DENY&#34;,
+  &#34;x-xss-protection&#34;: &#34;1; mode=block&#34;
+}</pre>
                           
                         </td>
                       </tr>
@@ -482,6 +615,24 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host=&#39;api.weixin.qq.com&#3
                         <th>content_type</th>
                         <td>
                           
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;code&#34;: 200,
+  &#34;resultMessage&#34;: &#34;&#34;,
+  &#34;data&#34;: {
+    &#34;bagStartNum&#34;: &#34;18430034854&#34;,
+    &#34;bagEndNum&#34;: &#34;18430034854&#34;
+  }
+}</pre>
                             
                           
                         </td>
@@ -495,6 +646,38 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host=&#39;api.weixin.qq.com&#3
                 <div style="overflow: auto">
                 
                 
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.code
+                      </td>
+                      <td>equals</td>
+                      <td>LazyString($code)</td>
+                      <td>200</td>
+                    </tr>
+                    
+                </table>
+                
 
                 
                 
@@ -505,15 +688,15 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host=&#39;api.weixin.qq.com&#3
                 <table>
                   <tr>
                       <th>content_size(bytes)</th>
-                      <td>N/A</td>
+                      <td>94</td>
                     </tr>
                   <tr>
                     <th>response_time(ms)</th>
-                    <td>N/A</td>
+                    <td>153.73</td>
                   </tr>
                   <tr>
                     <th>elapsed(ms)</th>
-                    <td>N/A</td>
+                    <td>152.255</td>
                   </tr>
                 </table>
               </div>
@@ -523,22 +706,6 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host=&#39;api.weixin.qq.com&#3
         </div>
         
 
-        
-          <a class="button" href="#popup_attachment_1_2">traceback</a>
-          <div id="popup_attachment_1_2" class="overlay">
-            <div class="popup">
-              <h2>Traceback Message</h2>
-              <a class="close" href="#record_1_2">&times;</a>
-              <div class="content"><pre>Traceback (most recent call last):
-KeyError: &#39;token_id&#39;
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-httprunner.exceptions.VariableNotFound: token_id is not found.
-</pre></div>
-            </div>
-          </div>
         
 
       </td>

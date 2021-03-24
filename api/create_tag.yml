@@ -6,7 +6,7 @@ request:
   url: /cgi-bin/tags/create
   params:
     access_token: $token
-  json: {   "tag" : {     "name" : "试试"   } }
+  json: {"tag" : {"name":"试试1"}}
 
 validate:
   - eq: ['status_code',200]

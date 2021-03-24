@@ -1,0 +1,15 @@
+- config :
+    name: 获取token是否成功
+    variables:
+      code: 200
+    output:
+      - token
+
+
+- test:
+    name: 请求获取token接口
+    api: ./api/get_token.yml
+    extract:
+      token: content.data.token
+    validate:
+      - eq: [content.code,$code]

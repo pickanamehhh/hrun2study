@@ -155,11 +155,11 @@
   <table id="summary">
     <tr>
       <th>START AT</th>
-      <td colspan="4">2021-03-22T15:46:59.953204</td>
+      <td colspan="4">2021-03-24T15:50:38.138237</td>
     </tr>
     <tr>
       <th>DURATION</th>
-      <td colspan="4">0.770 seconds</td>
+      <td colspan="4">0.250 seconds</td>
     </tr>
     <tr>
       <th>PLATFORM</th>
@@ -183,7 +183,7 @@
 
   
   
-  <h3>百度搜索</h3>
+  <h3>获取token</h3>
   <table id="suite_1" class="details">
     <tr>
       <td>TOTAL: 1</td>
@@ -204,8 +204,8 @@
     
     <tr id="record_1_1">
       <th class="success" style="width:5em;">success</th>
-      <td colspan="2">执行搜索接口</td>
-      <td style="text-align:center;width:6em;">746.87 ms</td>
+      <td colspan="2">获取token</td>
+      <td style="text-align:center;width:6em;">232.72 ms</td>
       <td class="detail">
 
         
@@ -217,7 +217,7 @@
             <a class="close" href="#record_1_1_1">&times;</a>
 
             <div class="content">
-              <h3>Name: 执行搜索接口</h3>
+              <h3>Name: 获取token</h3>
 
               
 
@@ -231,7 +231,7 @@
                       <th>url</th>
                       <td>
                         
-                            https://www.baidu.com/s?wd=pubg
+                            https://uat-afl-erp-api.aihuishou.com/mine/login
                         
                       </td>
                     </tr>
@@ -240,7 +240,7 @@
                       <th>method</th>
                       <td>
                         
-                            GET
+                            POST
                         
                       </td>
                     </tr>
@@ -250,10 +250,24 @@
                       <td>
                         
                             <pre>{
-  &#34;User-Agent&#34;: &#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36&#34;,
+  &#34;User-Agent&#34;: &#34;python-requests/2.24.0&#34;,
   &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
-  &#34;accept&#34;: &#34;text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9&#34;,
-  &#34;Connection&#34;: &#34;keep-alive&#34;
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Content-Length&#34;: &#34;209&#34;,
+  &#34;Content-Type&#34;: &#34;application/json&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;account&#34;: &#34;hubiao&#34;,
+  &#34;password&#34;: &#34;U0lETj6Onbkq1JWKmDMTtb0UU3GgbmI+dHxoa6lh+mWVZsWenyXs40DHo7dSNsZaHc7hkTWlUcW9QnmziEb45WYC9fPs7ZMkVbAqXTn9QI0MMLvuT7/CRkvSXUI0MDQAX6+bE3g8CHbRiS/13JiEjyzfPB1BIXzRdPvRWKpGQSo=&#34;
 }</pre>
                         
                       </td>
@@ -279,7 +293,7 @@
                         <th>url</th>
                         <td>
                           
-                            https://www.baidu.com/s?wd=pubg
+                            https://uat-afl-erp-api.aihuishou.com/mine/login
                           
                         </td>
                       </tr>
@@ -306,17 +320,7 @@
                         <th>cookies</th>
                         <td>
                           
-                            {
-  "BAIDUID": "1F40BCE121072AF8BC9853F0030AEBA3:FG=1",
-  "BAIDUID_BFESS": "1F40BCE121072AF86A2437139F598002:FG=1",
-  "BIDUPSID": "1F40BCE121072AF86A2437139F598002",
-  "H_PS_PSSID": "33344_31253_33595_33675_33392_33713_33652",
-  "PSINO": "5",
-  "PSTM": "1616428020",
-  "delPer": "0",
-  "BDSVRTM": "11",
-  "BD_CK_SAM": "1"
-}
+                            {}
                           
                         </td>
                       </tr>
@@ -325,7 +329,7 @@
                         <th>encoding</th>
                         <td>
                           
-                            utf-8
+                            UTF-8
                           
                         </td>
                       </tr>
@@ -335,23 +339,18 @@
                         <td>
                           
                             <pre>{
-  &#34;Bdpagetype&#34;: &#34;3&#34;,
-  &#34;Bdqid&#34;: &#34;0x8bd818df00004c9c&#34;,
-  &#34;Cache-Control&#34;: &#34;private&#34;,
-  &#34;Ckpacknum&#34;: &#34;2&#34;,
-  &#34;Ckrndstr&#34;: &#34;f00004c9c&#34;,
+  &#34;Date&#34;: &#34;Wed, 24 Mar 2021 15:50:38 GMT&#34;,
+  &#34;Content-Type&#34;: &#34;application/json;charset=UTF-8&#34;,
+  &#34;Content-Length&#34;: &#34;343&#34;,
   &#34;Connection&#34;: &#34;keep-alive&#34;,
-  &#34;Content-Encoding&#34;: &#34;gzip&#34;,
-  &#34;Content-Type&#34;: &#34;text/html;charset=utf-8&#34;,
-  &#34;Date&#34;: &#34;Mon, 22 Mar 2021 15:47:00 GMT&#34;,
-  &#34;P3p&#34;: &#34;CP=\&#34; OTI DSP COR IVA OUR IND COM \&#34;, CP=\&#34; OTI DSP COR IVA OUR IND COM \&#34;&#34;,
-  &#34;Server&#34;: &#34;BWS/1.1&#34;,
-  &#34;Set-Cookie&#34;: &#34;BAIDUID=1F40BCE121072AF86A2437139F598002:FG=1; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com, BIDUPSID=1F40BCE121072AF86A2437139F598002; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com, PSTM=1616428020; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com, BAIDUID=1F40BCE121072AF8BC9853F0030AEBA3:FG=1; max-age=31536000; expires=Tue, 22-Mar-22 15:47:00 GMT; domain=.baidu.com; path=/; version=1; comment=bd, delPer=0; path=/; domain=.baidu.com, BD_CK_SAM=1;path=/, PSINO=5; domain=.baidu.com; path=/, BDSVRTM=11; path=/, H_PS_PSSID=33344_31253_33595_33675_33392_33713_33652; path=/; domain=.baidu.com, BAIDUID_BFESS=1F40BCE121072AF86A2437139F598002:FG=1; Path=/; Domain=baidu.com; Expires=Thu, 31 Dec 2037 23:55:55 GMT; Max-Age=2147483647; Secure; SameSite=None&#34;,
-  &#34;Strict-Transport-Security&#34;: &#34;max-age=172800&#34;,
-  &#34;Traceid&#34;: &#34;1616428020056293377010076831512298278044&#34;,
-  &#34;Vary&#34;: &#34;Accept-Encoding&#34;,
-  &#34;X-Ua-Compatible&#34;: &#34;IE=Edge,chrome=1&#34;,
-  &#34;Transfer-Encoding&#34;: &#34;chunked&#34;
+  &#34;cache-control&#34;: &#34;no-cache, no-store, max-age=0, must-revalidate&#34;,
+  &#34;expires&#34;: &#34;0&#34;,
+  &#34;pragma&#34;: &#34;no-cache&#34;,
+  &#34;x-content-type-options&#34;: &#34;nosniff&#34;,
+  &#34;x-envoy-decorator-operation&#34;: &#34;traefik-ingress-lb.kube-system.svc.cluster.local:80/*&#34;,
+  &#34;x-envoy-upstream-service-time&#34;: &#34;151&#34;,
+  &#34;x-frame-options&#34;: &#34;DENY&#34;,
+  &#34;x-xss-protection&#34;: &#34;1; mode=block&#34;
 }</pre>
                           
                         </td>
@@ -361,7 +360,7 @@
                         <th>content_type</th>
                         <td>
                           
-                            text/html;charset=utf-8
+                            application/json;charset=UTF-8
                           
                         </td>
                       </tr>
@@ -371,92 +370,13 @@
                         <td>
                           
                             
-                              <pre>&lt;!DOCTYPE html&gt;
-&lt;!--STATUS OK--&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-&lt;html&gt;
-	&lt;head&gt;
-		
-		&lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;IE=edge,chrome=1&#34;&gt;
-		&lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html;charset=utf-8&#34;&gt;
-		&lt;meta content=&#34;always&#34; name=&#34;referrer&#34;&gt;
-        &lt;meta name=&#34;theme-color&#34; content=&#34;#2932e1&#34;&gt;
-        &lt;link rel=&#34;shortcut icon&#34; href=&#34;/favicon.ico&#34; type=&#34;image/x-icon&#34; /&gt;
-       ... OMITTED 718598 CHARACTORS ...</pre>
+                              <pre>{
+  &#34;code&#34;: 200,
+  &#34;resultMessage&#34;: &#34;&#34;,
+  &#34;data&#34;: {
+    &#34;token&#34;: &#34;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJTVTIwMTkwODEzMDQyMDM0NjYyMjY4IiwiZXAiOiIrRFJjaUZNR0tBWThNa296SlV0VkdGK09GaHBnR2tPV1RWSlhpajhjcExYT2w5NEdmRVliNDN6azFvWlJ5UWRFcjNORm9McmJRU3BteFVJNUFoZnNoQT09IiwiZXhwIjoxNzQ2MjAxMDM4LCJ0eXBlIjoibmV3In0.LLhPs2OLJ8iOqsCfqnJeQyjZCefhOYvYEl0hlrkv4Fk&#34;
+  }
+}</pre>
                             
                           
                         </td>
@@ -501,15 +421,15 @@
                 <table>
                   <tr>
                       <th>content_size(bytes)</th>
-                      <td>731745</td>
+                      <td>343</td>
                     </tr>
                   <tr>
                     <th>response_time(ms)</th>
-                    <td>746.87</td>
+                    <td>232.72</td>
                   </tr>
                   <tr>
                     <th>elapsed(ms)</th>
-                    <td>128.694</td>
+                    <td>229.357</td>
                   </tr>
                 </table>
               </div>

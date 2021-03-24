@@ -155,11 +155,11 @@
   <table id="summary">
     <tr>
       <th>START AT</th>
-      <td colspan="4">2021-03-23T15:42:50.150744</td>
+      <td colspan="4">2021-03-24T15:29:46.807844</td>
     </tr>
     <tr>
       <th>DURATION</th>
-      <td colspan="4">0.007 seconds</td>
+      <td colspan="4">0.147 seconds</td>
     </tr>
     <tr>
       <th>PLATFORM</th>
@@ -175,7 +175,7 @@
     <tr>
       <td>total (details) =></td>
       <td colspan="2">1 (1/0)</td>
-      <td colspan="2">1 (0/0/0/1)</td>
+      <td colspan="2">1 (1/0/0/0)</td>
     </tr>
   </table>
 
@@ -183,14 +183,14 @@
 
   
   
-  <h3>百度搜索</h3>
+  <h3>获取token</h3>
   <table id="suite_1" class="details">
     <tr>
       <td>TOTAL: 1</td>
-      <td>SUCCESS: 0</td>
+      <td>SUCCESS: 1</td>
       <td>FAILED: 0</td>
       <td>ERROR: 0</td>
-      <td>SKIPPED: 1</td>
+      <td>SKIPPED: 0</td>
     </tr>
     <tr>
       <th>Status</th>
@@ -203,9 +203,9 @@
     
     
     <tr id="record_1_1">
-      <th class="skipped" style="width:5em;">skipped</th>
-      <td colspan="2">执行搜索接口</td>
-      <td style="text-align:center;width:6em;">N/A ms</td>
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">获取token</td>
+      <td style="text-align:center;width:6em;">134.08 ms</td>
       <td class="detail">
 
         
@@ -217,7 +217,7 @@
             <a class="close" href="#record_1_1_1">&times;</a>
 
             <div class="content">
-              <h3>Name: </h3>
+              <h3>Name: 获取token</h3>
 
               
 
@@ -231,7 +231,7 @@
                       <th>url</th>
                       <td>
                         
-                            N/A
+                            https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx8708f96abc9abaf3&secret=5be760a8fac19282515d47d326ab108b
                         
                       </td>
                     </tr>
@@ -240,7 +240,7 @@
                       <th>method</th>
                       <td>
                         
-                            N/A
+                            GET
                         
                       </td>
                     </tr>
@@ -249,7 +249,12 @@
                       <th>headers</th>
                       <td>
                         
-                            <pre>{}</pre>
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;python-requests/2.24.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;
+}</pre>
                         
                       </td>
                     </tr>
@@ -262,19 +267,46 @@
                 <table>
                     
                       <tr>
-                        <th>status_code</th>
+                        <th>ok</th>
                         <td>
                           
-                            N/A
+                            True
                           
                         </td>
                       </tr>
                     
                       <tr>
-                        <th>headers</th>
+                        <th>url</th>
                         <td>
                           
-                            <pre>{}</pre>
+                            https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx8708f96abc9abaf3&secret=5be760a8fac19282515d47d326ab108b
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
                           
                         </td>
                       </tr>
@@ -289,9 +321,37 @@
                       </tr>
                     
                       <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Content-Type&#34;: &#34;application/json; encoding=utf-8&#34;,
+  &#34;Date&#34;: &#34;Wed, 24 Mar 2021 15:29:47 GMT&#34;,
+  &#34;Content-Length&#34;: &#34;92&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
                         <th>content_type</th>
                         <td>
                           
+                            application/json; encoding=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;errcode&#34;: 45009,
+  &#34;errmsg&#34;: &#34;reach max api daily quota limit rid: 605b5aeb-67e2c590-35e25a4b&#34;
+}</pre>
                             
                           
                         </td>
@@ -305,6 +365,27 @@
                 <div style="overflow: auto">
                 
                 
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                </table>
+                
 
                 
                 
@@ -315,15 +396,15 @@
                 <table>
                   <tr>
                       <th>content_size(bytes)</th>
-                      <td>N/A</td>
+                      <td>92</td>
                     </tr>
                   <tr>
                     <th>response_time(ms)</th>
-                    <td>N/A</td>
+                    <td>134.08</td>
                   </tr>
                   <tr>
                     <th>elapsed(ms)</th>
-                    <td>N/A</td>
+                    <td>125.247</td>
                   </tr>
                 </table>
               </div>
@@ -333,15 +414,6 @@
         </div>
         
 
-        
-          <a class="button" href="#popup_attachment_1_1">traceback</a>
-          <div id="popup_attachment_1_1" class="overlay">
-            <div class="popup">
-              <h2>Traceback Message</h2>
-              <a class="close" href="#record_1_1">&times;</a>
-              <div class="content"><pre>1+1 evaluate to True</pre></div>
-            </div>
-          </div>
         
 
       </td>

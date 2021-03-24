@@ -155,11 +155,11 @@
   <table id="summary">
     <tr>
       <th>START AT</th>
-      <td colspan="4">2021-03-17T15:33:29.926211</td>
+      <td colspan="4">2021-03-24T16:16:48.980339</td>
     </tr>
     <tr>
       <th>DURATION</th>
-      <td colspan="4">0.255 seconds</td>
+      <td colspan="4">0.592 seconds</td>
     </tr>
     <tr>
       <th>PLATFORM</th>
@@ -174,8 +174,8 @@
     </tr>
     <tr>
       <td>total (details) =></td>
-      <td colspan="2">1 (1/0)</td>
-      <td colspan="2">2 (2/0/0/0)</td>
+      <td colspan="2">2 (2/0)</td>
+      <td colspan="2">3 (3/0/0/0)</td>
     </tr>
   </table>
 
@@ -183,11 +183,11 @@
 
   
   
-  <h3>标签查询用例</h3>
+  <h3>获取token</h3>
   <table id="suite_1" class="details">
     <tr>
-      <td>TOTAL: 2</td>
-      <td>SUCCESS: 2</td>
+      <td>TOTAL: 1</td>
+      <td>SUCCESS: 1</td>
       <td>FAILED: 0</td>
       <td>ERROR: 0</td>
       <td>SKIPPED: 0</td>
@@ -204,8 +204,8 @@
     
     <tr id="record_1_1">
       <th class="success" style="width:5em;">success</th>
-      <td colspan="2">获取token_id</td>
-      <td style="text-align:center;width:6em;">161.00 ms</td>
+      <td colspan="2">请求获取token接口</td>
+      <td style="text-align:center;width:6em;">231.73 ms</td>
       <td class="detail">
 
         
@@ -217,7 +217,7 @@
             <a class="close" href="#record_1_1_1">&times;</a>
 
             <div class="content">
-              <h3>Name: 获取token_id</h3>
+              <h3>Name: 请求获取token接口</h3>
 
               
 
@@ -231,7 +231,7 @@
                       <th>url</th>
                       <td>
                         
-                            https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx8708f96abc9abaf3&secret=5be760a8fac19282515d47d326ab108b
+                            https://uat-afl-erp-api.aihuishou.com/mine/login
                         
                       </td>
                     </tr>
@@ -240,7 +240,7 @@
                       <th>method</th>
                       <td>
                         
-                            GET
+                            POST
                         
                       </td>
                     </tr>
@@ -253,7 +253,21 @@
   &#34;User-Agent&#34;: &#34;python-requests/2.24.0&#34;,
   &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
   &#34;Accept&#34;: &#34;*/*&#34;,
-  &#34;Connection&#34;: &#34;keep-alive&#34;
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Content-Length&#34;: &#34;209&#34;,
+  &#34;Content-Type&#34;: &#34;application/json&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;account&#34;: &#34;hubiao&#34;,
+  &#34;password&#34;: &#34;U0lETj6Onbkq1JWKmDMTtb0UU3GgbmI+dHxoa6lh+mWVZsWenyXs40DHo7dSNsZaHc7hkTWlUcW9QnmziEb45WYC9fPs7ZMkVbAqXTn9QI0MMLvuT7/CRkvSXUI0MDQAX6+bE3g8CHbRiS/13JiEjyzfPB1BIXzRdPvRWKpGQSo=&#34;
 }</pre>
                         
                       </td>
@@ -279,7 +293,7 @@
                         <th>url</th>
                         <td>
                           
-                            https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx8708f96abc9abaf3&secret=5be760a8fac19282515d47d326ab108b
+                            https://uat-afl-erp-api.aihuishou.com/mine/login
                           
                         </td>
                       </tr>
@@ -315,7 +329,7 @@
                         <th>encoding</th>
                         <td>
                           
-                            None
+                            UTF-8
                           
                         </td>
                       </tr>
@@ -325,10 +339,18 @@
                         <td>
                           
                             <pre>{
+  &#34;Date&#34;: &#34;Wed, 24 Mar 2021 16:16:49 GMT&#34;,
+  &#34;Content-Type&#34;: &#34;application/json;charset=UTF-8&#34;,
+  &#34;Content-Length&#34;: &#34;343&#34;,
   &#34;Connection&#34;: &#34;keep-alive&#34;,
-  &#34;Content-Type&#34;: &#34;application/json; encoding=utf-8&#34;,
-  &#34;Date&#34;: &#34;Wed, 17 Mar 2021 15:33:51 GMT&#34;,
-  &#34;Content-Length&#34;: &#34;194&#34;
+  &#34;cache-control&#34;: &#34;no-cache, no-store, max-age=0, must-revalidate&#34;,
+  &#34;expires&#34;: &#34;0&#34;,
+  &#34;pragma&#34;: &#34;no-cache&#34;,
+  &#34;x-content-type-options&#34;: &#34;nosniff&#34;,
+  &#34;x-envoy-decorator-operation&#34;: &#34;traefik-ingress-lb.kube-system.svc.cluster.local:80/*&#34;,
+  &#34;x-envoy-upstream-service-time&#34;: &#34;149&#34;,
+  &#34;x-frame-options&#34;: &#34;DENY&#34;,
+  &#34;x-xss-protection&#34;: &#34;1; mode=block&#34;
 }</pre>
                           
                         </td>
@@ -338,7 +360,7 @@
                         <th>content_type</th>
                         <td>
                           
-                            application/json; encoding=utf-8
+                            application/json;charset=UTF-8
                           
                         </td>
                       </tr>
@@ -349,8 +371,11 @@
                           
                             
                               <pre>{
-  &#34;access_token&#34;: &#34;43_Yt0xFMFHal1JulYiixBMiOtHJJKqjpfDfC0f34Q_gCsPAecdC312taM98dvPVTh405W-khaiF8Ccye3dRGg-9YOs5Bzt69U1F7sB7qCnpDj2tKfOz4MGb1HQa48cv2QGoZSMnUiv0nY8fG1jOMXaAIAAYJ&#34;,
-  &#34;expires_in&#34;: 7200
+  &#34;code&#34;: 200,
+  &#34;resultMessage&#34;: &#34;&#34;,
+  &#34;data&#34;: {
+    &#34;token&#34;: &#34;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJTVTIwMTkwODEzMDQyMDM0NjYyMjY4IiwiZXAiOiIrRFJjaUZNR0tBWThNa296SlV0VkdGK09GaHBnR2tPV1RWSlhpajhjcExYT2w5NEdmRVliNDN6azFvWlJ5UWRFcjNORm9McmJRU3BteFVJNUFoZnNoQT09IiwiZXhwIjoxNzQ2MjAyNjA5LCJ0eXBlIjoibmV3In0.XezXlccFKW9B3_VqPY1ZoZVpzV0Y6wAtwOygPiofy8I&#34;
+  }
 }</pre>
                             
                           
@@ -384,6 +409,17 @@
                       <td>200</td>
                     </tr>
                     
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.code
+                      </td>
+                      <td>equals</td>
+                      <td>LazyString($code)</td>
+                      <td>200</td>
+                    </tr>
+                    
                 </table>
                 
 
@@ -396,15 +432,15 @@
                 <table>
                   <tr>
                       <th>content_size(bytes)</th>
-                      <td>194</td>
+                      <td>343</td>
                     </tr>
                   <tr>
                     <th>response_time(ms)</th>
-                    <td>161.0</td>
+                    <td>231.73</td>
                   </tr>
                   <tr>
                     <th>elapsed(ms)</th>
-                    <td>157.045</td>
+                    <td>227.984</td>
                   </tr>
                 </table>
               </div>
@@ -419,24 +455,44 @@
       </td>
     </tr>
   
+  </table>
+  
+  
+  <h3>添加袋子</h3>
+  <table id="suite_2" class="details">
+    <tr>
+      <td>TOTAL: 2</td>
+      <td>SUCCESS: 2</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
     
     
-    <tr id="record_1_2">
+    
+    <tr id="record_2_1">
       <th class="success" style="width:5em;">success</th>
-      <td colspan="2">获取公众号已创建的标签</td>
-      <td style="text-align:center;width:6em;">80.92 ms</td>
+      <td colspan="2">请求获取token接口</td>
+      <td style="text-align:center;width:6em;">193.09 ms</td>
       <td class="detail">
 
         
         
-        <a class="button" href="#popup_log_1_2_1">log-1</a>
-        <div id="popup_log_1_2_1" class="overlay">
+        <a class="button" href="#popup_log_2_1_1">log-1</a>
+        <div id="popup_log_2_1_1" class="overlay">
           <div class="popup">
             <h2>Request and Response data</h2>
-            <a class="close" href="#record_1_2_1">&times;</a>
+            <a class="close" href="#record_2_1_1">&times;</a>
 
             <div class="content">
-              <h3>Name: 获取公众号已创建的标签</h3>
+              <h3>Name: 请求获取token接口</h3>
 
               
 
@@ -450,7 +506,7 @@
                       <th>url</th>
                       <td>
                         
-                            https://api.weixin.qq.com/cgi-bin/tags/get?access_token=43_Yt0xFMFHal1JulYiixBMiOtHJJKqjpfDfC0f34Q_gCsPAecdC312taM98dvPVTh405W-khaiF8Ccye3dRGg-9YOs5Bzt69U1F7sB7qCnpDj2tKfOz4MGb1HQa48cv2QGoZSMnUiv0nY8fG1jOMXaAIAAYJ
+                            https://uat-afl-erp-api.aihuishou.com/mine/login
                         
                       </td>
                     </tr>
@@ -459,7 +515,7 @@
                       <th>method</th>
                       <td>
                         
-                            GET
+                            POST
                         
                       </td>
                     </tr>
@@ -472,7 +528,21 @@
   &#34;User-Agent&#34;: &#34;python-requests/2.24.0&#34;,
   &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
   &#34;Accept&#34;: &#34;*/*&#34;,
-  &#34;Connection&#34;: &#34;keep-alive&#34;
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Content-Length&#34;: &#34;209&#34;,
+  &#34;Content-Type&#34;: &#34;application/json&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;account&#34;: &#34;hubiao&#34;,
+  &#34;password&#34;: &#34;U0lETj6Onbkq1JWKmDMTtb0UU3GgbmI+dHxoa6lh+mWVZsWenyXs40DHo7dSNsZaHc7hkTWlUcW9QnmziEb45WYC9fPs7ZMkVbAqXTn9QI0MMLvuT7/CRkvSXUI0MDQAX6+bE3g8CHbRiS/13JiEjyzfPB1BIXzRdPvRWKpGQSo=&#34;
 }</pre>
                         
                       </td>
@@ -498,7 +568,7 @@
                         <th>url</th>
                         <td>
                           
-                            https://api.weixin.qq.com/cgi-bin/tags/get?access_token=43_Yt0xFMFHal1JulYiixBMiOtHJJKqjpfDfC0f34Q_gCsPAecdC312taM98dvPVTh405W-khaiF8Ccye3dRGg-9YOs5Bzt69U1F7sB7qCnpDj2tKfOz4MGb1HQa48cv2QGoZSMnUiv0nY8fG1jOMXaAIAAYJ
+                            https://uat-afl-erp-api.aihuishou.com/mine/login
                           
                         </td>
                       </tr>
@@ -534,7 +604,7 @@
                         <th>encoding</th>
                         <td>
                           
-                            None
+                            UTF-8
                           
                         </td>
                       </tr>
@@ -544,10 +614,18 @@
                         <td>
                           
                             <pre>{
+  &#34;Date&#34;: &#34;Wed, 24 Mar 2021 16:16:49 GMT&#34;,
+  &#34;Content-Type&#34;: &#34;application/json;charset=UTF-8&#34;,
+  &#34;Content-Length&#34;: &#34;343&#34;,
   &#34;Connection&#34;: &#34;keep-alive&#34;,
-  &#34;Content-Type&#34;: &#34;application/json; encoding=utf-8&#34;,
-  &#34;Date&#34;: &#34;Wed, 17 Mar 2021 15:33:51 GMT&#34;,
-  &#34;Content-Length&#34;: &#34;82&#34;
+  &#34;cache-control&#34;: &#34;no-cache, no-store, max-age=0, must-revalidate&#34;,
+  &#34;expires&#34;: &#34;0&#34;,
+  &#34;pragma&#34;: &#34;no-cache&#34;,
+  &#34;x-content-type-options&#34;: &#34;nosniff&#34;,
+  &#34;x-envoy-decorator-operation&#34;: &#34;traefik-ingress-lb.kube-system.svc.cluster.local:80/*&#34;,
+  &#34;x-envoy-upstream-service-time&#34;: &#34;131&#34;,
+  &#34;x-frame-options&#34;: &#34;DENY&#34;,
+  &#34;x-xss-protection&#34;: &#34;1; mode=block&#34;
 }</pre>
                           
                         </td>
@@ -557,7 +635,7 @@
                         <th>content_type</th>
                         <td>
                           
-                            application/json; encoding=utf-8
+                            application/json;charset=UTF-8
                           
                         </td>
                       </tr>
@@ -568,18 +646,11 @@
                           
                             
                               <pre>{
-  &#34;tags&#34;: [
-    {
-      &#34;id&#34;: 2,
-      &#34;name&#34;: &#34;星标组&#34;,
-      &#34;count&#34;: 0
-    },
-    {
-      &#34;id&#34;: 100,
-      &#34;name&#34;: &#34;one&#34;,
-      &#34;count&#34;: 0
-    }
-  ]
+  &#34;code&#34;: 200,
+  &#34;resultMessage&#34;: &#34;&#34;,
+  &#34;data&#34;: {
+    &#34;token&#34;: &#34;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJTVTIwMTkwODEzMDQyMDM0NjYyMjY4IiwiZXAiOiIrRFJjaUZNR0tBWThNa296SlV0VkdGK09GaHBnR2tPV1RWSlhpajhjcExYT2w5NEdmRVliNDN6azFvWlJ5UWRFcjNORm9McmJRU3BteFVJNUFoZnNoQT09IiwiZXhwIjoxNzQ2MjAyNjA5LCJ0eXBlIjoibmV3In0.XezXlccFKW9B3_VqPY1ZoZVpzV0Y6wAtwOygPiofy8I&#34;
+  }
 }</pre>
                             
                           
@@ -606,11 +677,22 @@
                       
                       <td class="passed">
                       
-                        LazyString($bname)
+                        status_code
                       </td>
                       <td>equals</td>
-                      <td>one</td>
-                      <td>one</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.code
+                      </td>
+                      <td>equals</td>
+                      <td>LazyString($code)</td>
+                      <td>200</td>
                     </tr>
                     
                 </table>
@@ -625,15 +707,271 @@
                 <table>
                   <tr>
                       <th>content_size(bytes)</th>
-                      <td>82</td>
+                      <td>343</td>
                     </tr>
                   <tr>
                     <th>response_time(ms)</th>
-                    <td>80.92</td>
+                    <td>193.09</td>
                   </tr>
                   <tr>
                     <th>elapsed(ms)</th>
-                    <td>79.479</td>
+                    <td>191.652</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_2_2">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">请求添加袋子接口</td>
+      <td style="text-align:center;width:6em;">149.92 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_2_2_1">log-1</a>
+        <div id="popup_log_2_2_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_2_2_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 请求添加袋子接口</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            https://uat-afl-erp-api.aihuishou.com/bags/add
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            POST
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;python-requests/2.24.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;authorization&#34;: &#34;Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJTVTIwMTkwODEzMDQyMDM0NjYyMjY4IiwiZXAiOiIrRFJjaUZNR0tBWThNa296SlV0VkdGK09GaHBnR2tPV1RWSlhpajhjcExYT2w5NEdmRVliNDN6azFvWlJ5UWRFcjNORm9McmJRU3BteFVJNUFoZnNoQT09IiwiZXhwIjoxNzQ2MjAyNjA5LCJ0eXBlIjoibmV3In0.XezXlccFKW9B3_VqPY1ZoZVpzV0Y6wAtwOygPiofy8I&#34;,
+  &#34;Content-Length&#34;: &#34;14&#34;,
+  &#34;Content-Type&#34;: &#34;application/json&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;bagsNum&#34;: 1
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://uat-afl-erp-api.aihuishou.com/bags/add
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Date&#34;: &#34;Wed, 24 Mar 2021 16:16:49 GMT&#34;,
+  &#34;Content-Type&#34;: &#34;application/json;charset=UTF-8&#34;,
+  &#34;Content-Length&#34;: &#34;94&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;cache-control&#34;: &#34;no-cache, no-store, max-age=0, must-revalidate&#34;,
+  &#34;expires&#34;: &#34;0&#34;,
+  &#34;pragma&#34;: &#34;no-cache&#34;,
+  &#34;x-content-type-options&#34;: &#34;nosniff&#34;,
+  &#34;x-envoy-decorator-operation&#34;: &#34;traefik-ingress-lb.kube-system.svc.cluster.local:80/*&#34;,
+  &#34;x-envoy-upstream-service-time&#34;: &#34;133&#34;,
+  &#34;x-frame-options&#34;: &#34;DENY&#34;,
+  &#34;x-xss-protection&#34;: &#34;1; mode=block&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;code&#34;: 200,
+  &#34;resultMessage&#34;: &#34;&#34;,
+  &#34;data&#34;: {
+    &#34;bagStartNum&#34;: &#34;18430034856&#34;,
+    &#34;bagEndNum&#34;: &#34;18430034856&#34;
+  }
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.code
+                      </td>
+                      <td>equals</td>
+                      <td>LazyString($code)</td>
+                      <td>200</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>94</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>149.92</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>148.387</td>
                   </tr>
                 </table>
               </div>

@@ -1,0 +1,22 @@
+- config :
+    name: 添加袋子是否成功
+    variables:
+      code: 200
+    output:
+      - bagStartNum
+
+
+- test:
+    name: 请求获取token接口
+    testcase: ./testcases/20201108/test_get_token.yml
+    extract:
+      - token
+
+
+- test:
+    name: 请求添加袋子接口
+    api: ./api/add_bags.yml
+    extract:
+      bagStartNum: content.data.bagStartNum
+    validate:
+      - eq: [content.code,$code]

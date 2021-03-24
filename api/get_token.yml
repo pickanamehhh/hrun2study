@@ -1,0 +1,11 @@
+# 获取token
+name: 获取token
+base_url: ${ENV(erp_api)}
+request:
+  method: POST
+  url: /mine/login
+  json:
+    account: hubiao
+    password: 'U0lETj6Onbkq1JWKmDMTtb0UU3GgbmI+dHxoa6lh+mWVZsWenyXs40DHo7dSNsZaHc7hkTWlUcW9QnmziEb45WYC9fPs7ZMkVbAqXTn9QI0MMLvuT7/CRkvSXUI0MDQAX6+bE3g8CHbRiS/13JiEjyzfPB1BIXzRdPvRWKpGQSo='
+validate:  # 一般写用业务无关的断言 简单
+  - eq: ['status_code',200]

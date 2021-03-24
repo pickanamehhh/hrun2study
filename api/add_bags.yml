@@ -1,0 +1,12 @@
+# 添加袋子
+name: 添加袋子
+base_url: ${ENV(erp_api)}
+request:
+  method: POST
+  url: /bags/add
+  headers:
+      authorization: Bearer $token
+  json:
+    bagsNum: 1
+validate:  # 一般写用业务无关的断言 简单
+  - eq: ['status_code',200]

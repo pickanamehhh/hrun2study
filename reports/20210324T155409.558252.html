@@ -155,11 +155,11 @@
   <table id="summary">
     <tr>
       <th>START AT</th>
-      <td colspan="4">2021-03-17T15:35:26.536401</td>
+      <td colspan="4">2021-03-24T15:54:09.558252</td>
     </tr>
     <tr>
       <th>DURATION</th>
-      <td colspan="4">0.825 seconds</td>
+      <td colspan="4">0.378 seconds</td>
     </tr>
     <tr>
       <th>PLATFORM</th>
@@ -183,7 +183,7 @@
 
   
   
-  <h3>打开xmx官网</h3>
+  <h3>获取token是否成功</h3>
   <table id="suite_1" class="details">
     <tr>
       <td>TOTAL: 1</td>
@@ -204,8 +204,8 @@
     
     <tr id="record_1_1">
       <th class="success" style="width:5em;">success</th>
-      <td colspan="2">官网主页接口</td>
-      <td style="text-align:center;width:6em;">812.17 ms</td>
+      <td colspan="2">请求获取token接口</td>
+      <td style="text-align:center;width:6em;">361.66 ms</td>
       <td class="detail">
 
         
@@ -217,7 +217,7 @@
             <a class="close" href="#record_1_1_1">&times;</a>
 
             <div class="content">
-              <h3>Name: 官网主页接口</h3>
+              <h3>Name: 请求获取token接口</h3>
 
               
 
@@ -231,7 +231,7 @@
                       <th>url</th>
                       <td>
                         
-                            http://www.hnxmxit.com/
+                            https://uat-afl-erp-api.aihuishou.com/mine/login
                         
                       </td>
                     </tr>
@@ -240,7 +240,7 @@
                       <th>method</th>
                       <td>
                         
-                            GET
+                            POST
                         
                       </td>
                     </tr>
@@ -253,7 +253,21 @@
   &#34;User-Agent&#34;: &#34;python-requests/2.24.0&#34;,
   &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
   &#34;Accept&#34;: &#34;*/*&#34;,
-  &#34;Connection&#34;: &#34;keep-alive&#34;
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Content-Length&#34;: &#34;209&#34;,
+  &#34;Content-Type&#34;: &#34;application/json&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;account&#34;: &#34;hubiao&#34;,
+  &#34;password&#34;: &#34;U0lETj6Onbkq1JWKmDMTtb0UU3GgbmI+dHxoa6lh+mWVZsWenyXs40DHo7dSNsZaHc7hkTWlUcW9QnmziEb45WYC9fPs7ZMkVbAqXTn9QI0MMLvuT7/CRkvSXUI0MDQAX6+bE3g8CHbRiS/13JiEjyzfPB1BIXzRdPvRWKpGQSo=&#34;
 }</pre>
                         
                       </td>
@@ -279,7 +293,7 @@
                         <th>url</th>
                         <td>
                           
-                            http://www.hnxmxit.com/
+                            https://uat-afl-erp-api.aihuishou.com/mine/login
                           
                         </td>
                       </tr>
@@ -306,7 +320,7 @@
                         <th>cookies</th>
                         <td>
                           
-                            {'PHPSESSID': 'rk3tpe40l1ckge3nb2gfirikp4', 'TP_onlineid': '9b28e554f3638f3c6272f57e9bda2ed8', 'TP_think_language': 'cn'}
+                            {}
                           
                         </td>
                       </tr>
@@ -315,7 +329,7 @@
                         <th>encoding</th>
                         <td>
                           
-                            utf-8
+                            UTF-8
                           
                         </td>
                       </tr>
@@ -325,19 +339,18 @@
                         <td>
                           
                             <pre>{
-  &#34;Date&#34;: &#34;Wed, 17 Mar 2021 15:35:42 GMT&#34;,
-  &#34;Server&#34;: &#34;Apache&#34;,
-  &#34;Expires&#34;: &#34;Thu, 19 Nov 1981 08:52:00 GMT&#34;,
-  &#34;Pragma&#34;: &#34;no-cache&#34;,
-  &#34;Cache-control&#34;: &#34;private&#34;,
-  &#34;X-Powered-By&#34;: &#34;ThinkPHP&#34;,
-  &#34;Content-Encoding&#34;: &#34;gzip&#34;,
-  &#34;Vary&#34;: &#34;Accept-Encoding&#34;,
-  &#34;Set-Cookie&#34;: &#34;PHPSESSID=rk3tpe40l1ckge3nb2gfirikp4; path=/, TP_think_language=cn; path=/, TP_onlineid=9b28e554f3638f3c6272f57e9bda2ed8; path=/&#34;,
-  &#34;Keep-Alive&#34;: &#34;timeout=5, max=100&#34;,
-  &#34;Connection&#34;: &#34;Keep-Alive&#34;,
-  &#34;Transfer-Encoding&#34;: &#34;chunked&#34;,
-  &#34;Content-Type&#34;: &#34;text/html; charset=utf-8&#34;
+  &#34;Date&#34;: &#34;Wed, 24 Mar 2021 15:54:10 GMT&#34;,
+  &#34;Content-Type&#34;: &#34;application/json;charset=UTF-8&#34;,
+  &#34;Content-Length&#34;: &#34;343&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;cache-control&#34;: &#34;no-cache, no-store, max-age=0, must-revalidate&#34;,
+  &#34;expires&#34;: &#34;0&#34;,
+  &#34;pragma&#34;: &#34;no-cache&#34;,
+  &#34;x-content-type-options&#34;: &#34;nosniff&#34;,
+  &#34;x-envoy-decorator-operation&#34;: &#34;traefik-ingress-lb.kube-system.svc.cluster.local:80/*&#34;,
+  &#34;x-envoy-upstream-service-time&#34;: &#34;217&#34;,
+  &#34;x-frame-options&#34;: &#34;DENY&#34;,
+  &#34;x-xss-protection&#34;: &#34;1; mode=block&#34;
 }</pre>
                           
                         </td>
@@ -347,7 +360,7 @@
                         <th>content_type</th>
                         <td>
                           
-                            text/html; charset=utf-8
+                            application/json;charset=UTF-8
                           
                         </td>
                       </tr>
@@ -357,7 +370,13 @@
                         <td>
                           
                             
-                              <pre>&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Transitional//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&#34;&gt;&lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34;&gt;&lt;head&gt;&lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34; /&gt;&lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;IE=edge,chrome=1&#34; /&gt;&lt;meta http-equiv=&#34;Access-Control-Allow-Origin&#34; content=&#34;*&#34; /&gt;&lt;meta content=&#34;width=device-width, initial-scale=1&#34; name=&#34;viewport&#34;/&gt;&lt;meta name=&#34;robots&#34; content=&#34;index, follow&#34; /&gt;&lt;meta name=&#34;keywords&#34; content=&#34;新梦 ... OMITTED 42803 CHARACTORS ...</pre>
+                              <pre>{
+  &#34;code&#34;: 200,
+  &#34;resultMessage&#34;: &#34;&#34;,
+  &#34;data&#34;: {
+    &#34;token&#34;: &#34;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJTVTIwMTkwODEzMDQyMDM0NjYyMjY4IiwiZXAiOiIrRFJjaUZNR0tBWThNa296SlV0VkdGK09GaHBnR2tPV1RWSlhpajhjcExYT2w5NEdmRVliNDN6azFvWlJ5UWRFcjNORm9McmJRU3BteFVJNUFoZnNoQT09IiwiZXhwIjoxNzQ2MjAxMjUwLCJ0eXBlIjoibmV3In0.t3YEVbxhsi72FRJmMod9-zRKRwegbcOuv1e0ZvuGzSo&#34;
+  }
+}</pre>
                             
                           
                         </td>
@@ -390,6 +409,17 @@
                       <td>200</td>
                     </tr>
                     
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.code
+                      </td>
+                      <td>equals</td>
+                      <td>LazyString($code)</td>
+                      <td>200</td>
+                    </tr>
+                    
                 </table>
                 
 
@@ -402,15 +432,15 @@
                 <table>
                   <tr>
                       <th>content_size(bytes)</th>
-                      <td>54046</td>
+                      <td>343</td>
                     </tr>
                   <tr>
                     <th>response_time(ms)</th>
-                    <td>812.17</td>
+                    <td>361.66</td>
                   </tr>
                   <tr>
                     <th>elapsed(ms)</th>
-                    <td>779.29</td>
+                    <td>353.264</td>
                   </tr>
                 </table>
               </div>
