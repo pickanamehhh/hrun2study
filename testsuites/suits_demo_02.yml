@@ -1,0 +1,13 @@
+# 袋子相关
+config:
+  name: 袋子相关接口
+
+testcases:
+  test_get_token:
+    testcase: ./testcases/20201108/test_get_token.yml
+
+  test_add_bags:
+    testcase: ./testcases/20201108/test_add_bags.yml
+
+
+

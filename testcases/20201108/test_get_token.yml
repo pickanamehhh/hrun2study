@@ -2,8 +2,10 @@
     name: 获取token是否成功
     variables:
       code: 200
-    output:
+    output:  # 输出
       - token
+#    export:  # export是httprunner2.2推出的，用来代替output,包含了跨用例传输参数
+#      - token
 
 
 - test:
